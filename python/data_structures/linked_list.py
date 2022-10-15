@@ -22,6 +22,15 @@ class LinkedList:
         printout += f'NULL'
         return printout
 
+    def includes(self, value):
+        current = self.head
+        while current is not None:
+            if current.value is value:
+                return True
+            current = current.next_
+        return False
+
+
 class Node:
     def __init__(self, value, next_=None):
         self.value = value
