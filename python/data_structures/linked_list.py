@@ -7,9 +7,11 @@ class LinkedList:
         # initialization here
         self.head = head
 
-    def some_method(self):
-        # method body here
-        pass
+    def insert(self, value):
+        node = Node(value)
+        if self.head is not None:
+            node.next = self.head
+        self.head = node
 
 
 class Node:
