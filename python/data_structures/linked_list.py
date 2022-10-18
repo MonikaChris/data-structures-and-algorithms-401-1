@@ -30,6 +30,16 @@ class LinkedList:
             current = current.next_
         return False
 
+    def append(self, value):
+        node = Node(value)
+
+        if self.head is None:
+            self.head = node
+        else:
+            current = self.head
+            while current.next_:
+                current = current.next_
+            current.next_ = node
 
 class Node:
     def __init__(self, value, next_=None):
