@@ -55,6 +55,15 @@ class LinkedList:
                 else:
                     current = current.next_
 
+    def insert_after(self, value, new_value):
+        current = self.head
+        while current:
+            if current.value is value:
+                node = Node(new_value, current.next_)
+                current.next_ = node
+                break
+            else:
+                current = current.next_
 
 class Node:
     def __init__(self, value, next_=None):
