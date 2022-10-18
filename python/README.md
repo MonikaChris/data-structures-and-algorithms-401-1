@@ -2,6 +2,14 @@
 
 ## Language: `Python`
 
+## Table of Contents of READMEs:
+- [Code Challenge 1](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/codechallenge6/python/code_challenges/array-reverse)
+- [Code Challenge 2](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/codechallenge6/python/code_challenges/list-insert-shift)
+- [Code Challenge 3](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/codechallenge6/python/code_challenges/list-binary-search)
+- Code Challenge 4 - no link
+- [Code Challenge 5](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/codechallenge6/python/docs/READMEs/linked_list)
+- [Code Challenge 6](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/codechallenge6/python/docs/READMEs/linked_list)
+
 ### Folder and Challenge Setup
 
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.

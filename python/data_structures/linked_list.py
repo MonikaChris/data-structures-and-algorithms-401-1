@@ -30,11 +30,62 @@ class LinkedList:
             current = current.next_
         return False
 
+    def append(self, value):
+        node = Node(value)
+
+        if self.head is None:
+            self.head = node
+        else:
+            current = self.head
+            while current.next_:
+                current = current.next_
+            current.next_ = node
+
+    def insert_before(self, value, new_value):
+        if self.head is None:
+            raise TargetError('Empty list')
+
+        if not self.includes(value):
+            raise TargetError('Value not found')
+
+        if self.head.value is value:
+            node = Node(new_value, self.head)
+            self.head = node
+        else:
+            current = self.head
+            while current:
+                if current.next_.value is value:
+                    node = Node(new_value, current.next_)
+                    current.next_ = node
+                    break
+                else:
+                    current = current.next_
+
+    def insert_after(self, value, new_value):
+        if self.head is None:
+            raise TargetError('Empty list')
+
+        if not self.includes(value):
+            raise TargetError('Value not found')
+
+        current = self.head
+        while current:
+            if current.value is value:
+                node = Node(new_value, current.next_)
+                current.next_ = node
+                break
+            else:
+                current = current.next_
 
 class Node:
     def __init__(self, value, next_=None):
         self.value = value
         self.next_ = next_
 
-class TargetError:
-    pass
+
+class TargetError(Exception):
+    def __init__(self, message):
+        self.message = message
+
+    def __str__(self):
+        return self.message
