@@ -45,6 +45,9 @@ class LinkedList:
         if self.head is None:
             raise TargetError('Empty list')
 
+        if not self.includes(value):
+            raise TargetError('Value not found')
+
         if self.head.value is value:
             node = Node(new_value, self.head)
             self.head = node
@@ -59,6 +62,12 @@ class LinkedList:
                     current = current.next_
 
     def insert_after(self, value, new_value):
+        if self.head is None:
+            raise TargetError('Empty list')
+
+        if not self.includes(value):
+            raise TargetError('Value not found')
+
         current = self.head
         while current:
             if current.value is value:
