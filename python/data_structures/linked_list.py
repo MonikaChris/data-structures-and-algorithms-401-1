@@ -42,6 +42,9 @@ class LinkedList:
             current.next_ = node
 
     def insert_before(self, value, new_value):
+        if self.head is None:
+            raise TargetError('Empty list')
+
         if self.head.value is value:
             node = Node(new_value, self.head)
             self.head = node
@@ -70,5 +73,10 @@ class Node:
         self.value = value
         self.next_ = next_
 
-class TargetError:
-    pass
+
+class TargetError(Exception):
+    def __init__(self, message):
+        self.message = message
+
+    def __str__(self):
+        return self.message
