@@ -17,6 +17,9 @@ Description of each method publicly available in Linked List Class:
 - insert which adds a new node to the head of the linked list
 - includes which returns True if a given value is in the linked list and False otherwise
 
+## Whiteboard Collaborators
+Andy Nguyen
+
 ## Append Whiteboard
 ![Whiteboard](append_wb.png)
 
