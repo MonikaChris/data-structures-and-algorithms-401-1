@@ -18,7 +18,8 @@ Description of each method publicly available in Linked List Class:
 - includes which returns True if a given value is in the linked list and False otherwise
 
 ## Whiteboard Collaborators
-Andy Nguyen
+Andy Nguyen (Append, Insert Before, Insert After)
+Alejandro Rivera (Kth from End)
 
 ## Append Whiteboard
 ![Whiteboard](append_wb.png)
@@ -28,3 +29,6 @@ Andy Nguyen
 
 ## Insert After Whiteboard
 ![Whiteboard](insert_after_wb.jpg)
+
+## Kth from End Whiteboard
+![Whiteboard](kth_from_end_wb.png)
