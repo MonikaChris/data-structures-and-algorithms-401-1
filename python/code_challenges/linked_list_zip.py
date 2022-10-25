@@ -13,7 +13,6 @@ def zip_lists(a, b):
     else:
         return b
 
-
     while current1 and current2:
         current_new.next_ = Node(current2.value)
         current2 = current2.next_
