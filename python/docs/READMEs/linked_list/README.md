@@ -19,7 +19,7 @@ Description of each method publicly available in Linked List Class:
 
 ## Whiteboard Collaborators
 Andy Nguyen (Append, Insert Before, Insert After)
-Alejandro Rivera (Kth from End)
+Alejandro Rivera (Kth from End, Zip Lists)
 
 ## Append Whiteboard
 ![Whiteboard](append_wb.png)
@@ -32,3 +32,6 @@ Alejandro Rivera (Kth from End)
 
 ## Kth from End Whiteboard
 ![Whiteboard](kth_from_end_wb.png)
+
+## Zip Lists Whiteboard
+![Whiteboard](zip_lists.png)
