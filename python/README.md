@@ -10,7 +10,7 @@
 - [Code Challenge 5](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/codechallenge6/python/docs/READMEs/linked_list)
 - [Code Challenge 6](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/codechallenge6/python/docs/READMEs/linked_list)
 - [Code Challenge 7](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/linked-list-kth/python/docs/READMEs/linked_list)
-- [Code Challenge 8](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/linked-list-kth/python/docs/READMEs/linked_list)
+- [Code Challenge 8](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/zip-lists/python/docs/READMEs/linked_list)
 
 ### Folder and Challenge Setup
 
