@@ -1,3 +1,6 @@
+from data_structures.invalid_operation_error import InvalidOperationError
+
+
 class Node:
     """
     Creates a node with a value and an optional next node. Default value for next is None.
@@ -57,10 +60,3 @@ class Stack:
         else:
             return False
 
-
-class InvalidOperationError(Exception):
-    def __init__(self, message):
-        self.message = message
-
-    def __str__(self):
-        return self.message
