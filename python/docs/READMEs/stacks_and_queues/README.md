@@ -1,5 +1,5 @@
 # Stacks and Queues
-Stack is implemented as a singly linked list with a "top" reference to the head of the linked list.
+Stack is implemented as a singly linked list with a "top" reference to the head of the linked list.\
 Queue is implemented as a singly linked list with a "front" reference to the head of the linked list and a "rear"
 reference to the tail of the linked list.
 

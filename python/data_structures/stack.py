@@ -19,7 +19,6 @@ class Stack:
     def __init__(self, top=None):
         self.top = top
 
-
     def push(self, value):
         """
         Adds node to top of stack.
