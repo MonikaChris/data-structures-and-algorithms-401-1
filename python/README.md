@@ -14,6 +14,7 @@
 - [Code Challenge 10](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/stack-and-queue/python/docs/READMEs/stacks_and_queues)
 - [Code Challenge 11](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/stack-queue-pseudo/python/docs/READMEs/pseudo_queue)
 - [Code Challenge 12](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/stack-queue-animal-shelter/python/docs/stack_queue_animal_shelter)
+- [Code Challenge 13](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/blob/stack-queue-brackets/python/docs/READMEs/stack-brackets/README.md)
 
 ### Folder and Challenge Setup
 
