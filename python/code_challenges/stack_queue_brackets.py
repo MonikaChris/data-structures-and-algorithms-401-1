@@ -2,7 +2,6 @@ from data_structures.stack import Stack
 
 
 def multi_bracket_validation(str):
-    balanced = True
     opened = Stack()
     brackets = {'{': 'open',
                 '(': 'open',
@@ -20,17 +19,15 @@ def multi_bracket_validation(str):
                 opened.push(char)
             else:
                 if opened.is_empty():
-                    balanced = False
-                    return balanced
+                    return False
                 if char == match[opened.peek()]:
                     opened.pop()
                 else:
-                    balanced = False
-                    return balanced
+                    return False
 
     if not opened.is_empty():
-        balanced = False
+        return False
 
-    return balanced
+    return True
 
 
