@@ -3,7 +3,8 @@ from data_structures.binary_tree import BinaryTree, Node
 
 class BinarySearchTree(BinaryTree):
     """
-    Put docstring here
+    Creates binary search tree. Add method take a value and adds node with that value. Contains method takes a value
+    and returns True if the BinarySearchTree contains that value, otherwise returns False.
     """
 
     def __init__(self, root=None):
