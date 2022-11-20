@@ -1,6 +1,7 @@
 class BinaryTree:
     """
-    Put docstring here
+    Creates a binary tree with an optional root node. Supports depth-first printing of values, either pre-order,
+    in-order, or post-order.
     """
 
     def __init__(self, root=None):
