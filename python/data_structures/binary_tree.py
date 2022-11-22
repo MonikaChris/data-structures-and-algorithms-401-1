@@ -1,3 +1,4 @@
+
 class BinaryTree:
     """
     Creates a binary tree with an optional root node. Supports depth-first printing of values, either pre-order,
@@ -51,6 +52,16 @@ class BinaryTree:
         walk(self.root, values_lst)
         return values_lst
 
+    def find_maximum_value(self):
+        nodes = self.post_order()
+        max_val = None
+
+        for elem in nodes:
+            if type(elem) is int or type(elem) is float:
+                if max_val is None or elem > max_val:
+                    max_val = elem
+
+        return max_val
 
 
 class Node:
@@ -58,3 +69,4 @@ class Node:
         self.value = value
         self.left = left
         self.right = right
+
