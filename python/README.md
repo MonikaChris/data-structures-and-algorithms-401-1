@@ -16,6 +16,7 @@
 - [Code Challenge 12](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/stack-queue-animal-shelter/python/docs/stack_queue_animal_shelter)
 - [Code Challenge 13](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/blob/stack-queue-brackets/python/docs/READMEs/stack-brackets/README.md)
 - [Code Challenge 15](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/trees/python/docs/READMEs/binary_trees)
+- [Code Challenge 16](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/tree-max/python/docs/READMEs/binary_trees)
 
 ### Folder and Challenge Setup
 
