@@ -11,6 +11,13 @@ Time: O(n)
 Space: O(n)
 
 
+### Additional Methods
+
+find_maximum_value - returns the largest value in the tree
+
+![Whiteboard](tree_find_max_wb.png)
+
+
 ## Binary Search Tree
 
 ### About
