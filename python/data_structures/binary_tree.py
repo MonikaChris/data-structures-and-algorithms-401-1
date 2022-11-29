@@ -54,6 +54,7 @@ class BinaryTree:
 
     def find_maximum_value(self):
         nodes = self.post_order()
+        print(nodes)
         max_val = None
 
         for elem in nodes:
