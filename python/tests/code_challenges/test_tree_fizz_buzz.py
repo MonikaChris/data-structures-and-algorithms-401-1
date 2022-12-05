@@ -99,3 +99,12 @@ def tree():
     nine.children = [fourteen, fifteen]
 
     return KaryTree(one)
+
+
+def test_fb_empty_tree():
+    tree = KaryTree()
+
+    actual = fizz_buzz_tree(tree)
+    expected = None
+
+    assert actual == expected
