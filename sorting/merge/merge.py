@@ -19,13 +19,13 @@ def merge(left, right, lst):
     while i < len(left) and j < len(right):
         if left[i] <= right[j]:
             lst[k] = left[i]
-            i = i + 1
+            i += 1
 
         else:
             lst[k] = right[j]
-            j = j + 1
+            j += 1
 
-        k = k + 1
+        k += 1
 
     if i == len(left):
         for idx in range(j, len(right)):
