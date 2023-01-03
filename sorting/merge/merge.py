@@ -38,7 +38,4 @@ def merge(left, right, lst):
             k += 1
 
 
-if __name__ == "__main__":
-    print(mergesort([8, 4, 23, 42, 16, 15]))
-
 
