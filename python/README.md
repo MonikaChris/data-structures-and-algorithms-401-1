@@ -20,6 +20,7 @@
 - [Code Challenge 17](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/tree-breadth-first/python/docs/READMEs/breadth_first_tree)
 - [Code Challenge 18](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/tree-fizz-buzz/python/docs/READMEs/fizzbuzz)
 - [Code Challenge 26](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/insertion_sort/sorting/insertion)
+- [Code Challenge 27](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/mergesort/sorting/merge)
 
 ### Folder and Challenge Setup
 
