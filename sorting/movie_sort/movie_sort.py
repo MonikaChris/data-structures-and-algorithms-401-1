@@ -173,5 +173,8 @@ def strip_title_prefix(title):
         return title
 
 
+if __name__ == "__main__":
+    print(year_sort(movies))
+    print(title_sort(movies))
 
 
