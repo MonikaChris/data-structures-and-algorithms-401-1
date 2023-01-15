@@ -60,3 +60,12 @@ def test_keys():
     expected = ["banana", "apple", "orange"]
 
     assert actual == expected
+
+
+def test_get_value_not_found():
+    hashtable = Hashtable()
+    hashtable.set("apple", "red")
+    hashtable.set("banana", "yellow")
+    hashtable.set("orange", "orange")
+
+    assert hashtable.get("pear") == None
