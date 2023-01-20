@@ -24,6 +24,7 @@
 - [Code Challenge 28](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/movie_sort/sorting/movie_sort)
 - [Code Challenge 30](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/hashtable/python/docs/READMEs/Hashtables)
 - [Code Challenge 31](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/hashmap-repeated-word/python/docs/hashtable_repeated_word)
+- [Code Challenge 32](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/intersect/python/docs/tree_intersection)
 
 ### Folder and Challenge Setup
 
