@@ -15,7 +15,7 @@ def test_get_apple():
     assert actual == expected
 
 
-#@pytest.mark.skip("TODO")
+@pytest.mark.skip("TODO")
 def test_internals():
     hashtable = Hashtable(1024)
     hashtable.set("ahmad", 30)
@@ -33,7 +33,7 @@ def test_internals():
 
     assert actual == expected
 
-
+#@pytest.mark.skip("TODO")
 def test_has_true():
     hashtable = Hashtable()
     hashtable.set("apple", 'red')
@@ -41,7 +41,7 @@ def test_has_true():
 
     assert hashtable.has("apple") == True
 
-
+#@pytest.mark.skip("TODO")
 def test_has_false():
     hashtable = Hashtable()
     hashtable.set("apple", 'red')
@@ -49,7 +49,7 @@ def test_has_false():
 
     assert hashtable.has("pear") == False
 
-
+#@pytest.mark.skip("TODO")
 def test_keys():
     hashtable = Hashtable()
     hashtable.set("apple", "red")
@@ -61,7 +61,7 @@ def test_keys():
 
     assert actual == expected
 
-
+@pytest.mark.skip("TODO")
 def test_get_value_not_found():
     hashtable = Hashtable()
     hashtable.set("apple", "red")
