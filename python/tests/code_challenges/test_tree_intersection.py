@@ -40,3 +40,47 @@ def add_values_to_empty_tree(tree, values):
         node.right = Node(values.pop()) if values else None
         q.enqueue(node.left)
         q.enqueue(node.right)
+
+
+def test_tree_empty():
+    tree_a = BinaryTree()
+
+    tree_b = BinaryTree()
+    vals = [10, 20, 30]
+    add_values_to_empty_tree(tree_b, vals)
+
+    actual = tree_intersection(tree_a, tree_b)
+    expected = None
+
+    assert actual == expected
+
+
+def test_none_in_common():
+    tree_a = BinaryTree()
+    vals = [1, 2, 3]
+    add_values_to_empty_tree(tree_a, vals)
+
+    tree_b = BinaryTree()
+    vals = [10, 20, 30]
+    add_values_to_empty_tree(tree_b, vals)
+
+    actual = tree_intersection(tree_a, tree_b)
+    expected = []
+
+    assert actual == expected
+
+
+def test_identical_trees():
+    tree_a = BinaryTree()
+    vals = [10, 20, 30]
+    add_values_to_empty_tree(tree_a, vals)
+
+    tree_b = BinaryTree()
+    vals = [10, 20, 30]
+    add_values_to_empty_tree(tree_b, vals)
+
+    actual = tree_intersection(tree_a, tree_b)
+    expected = [10, 20, 30]
+
+    assert actual == expected
+
