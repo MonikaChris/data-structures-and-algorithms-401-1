@@ -25,6 +25,7 @@
 - [Code Challenge 30](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/hashtable/python/docs/READMEs/Hashtables)
 - [Code Challenge 31](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/hashmap-repeated-word/python/docs/hashtable_repeated_word)
 - [Code Challenge 32](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/intersect/python/docs/tree_intersection)
+- [Code Challenge 33](https://github.com/MonikaChris/data-structures-and-algorithms-401-1/tree/intersect/python/docs/hashtable_left_join)
 
 ### Folder and Challenge Setup
 
