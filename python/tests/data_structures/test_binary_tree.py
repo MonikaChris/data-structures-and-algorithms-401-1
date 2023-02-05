@@ -28,6 +28,13 @@ def test_post_order(tree):
     assert actual == expected
 
 
+def test_max_of_empty_tree():
+    tree = BinaryTree()
+    actual = tree.find_maximum_value()
+    expected = None
+    assert actual == expected
+
+
 @pytest.fixture
 def tree():
     """
