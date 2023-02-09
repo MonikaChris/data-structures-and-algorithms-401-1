@@ -35,6 +35,9 @@ class Graph:
     def size(self):
         return len(self.adj_lst.keys())
 
+    def breadth_first(self, root):
+        pass
+
 
 class Vertex:
 
