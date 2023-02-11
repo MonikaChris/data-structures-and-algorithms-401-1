@@ -18,6 +18,7 @@ class Queue:
     def __init__(self, front=None):
         self.front = front
         self.rear = None
+        self.length = 0
 
     def enqueue(self, value):
         """
@@ -32,6 +33,7 @@ class Queue:
         else:
             self.rear.next = node
             self.rear = node
+        self.length += 1
 
     def dequeue(self):
         """
@@ -44,6 +46,7 @@ class Queue:
         self.front = self.front.next
         temp.next = None
         return temp.value
+        self.length -= 1
 
     def peek(self):
         """
