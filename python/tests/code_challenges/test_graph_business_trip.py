@@ -32,6 +32,21 @@ def test_narnia_arendelle_naboo(planets):
     names = ["Narnia", "Arendelle", "Naboo"]
     assert direct_flights(planets, names) == (False, 0)
 
+def test_invalid_city(planets):
+    names = ["Narnia", "New York"]
+    assert direct_flights(planets, names) == (False, 0)
+
+
+def test_empty_graph():
+    graph = Graph()
+    names = ["Narnia", "Arendelle", "Naboo"]
+    assert direct_flights(graph, names) == (False, 0)
+
+
+def test_many_cities(planets):
+    names = ["Arendelle", "New Monstropolis", "Naboo", "Metroville", "Pandora"]
+    assert direct_flights(planets, names) == (True, 223)
+
 
 @pytest.fixture
 def planets():
