@@ -3,41 +3,36 @@ from data_structures.queue import Queue
 
 
 def direct_flights(graph, cities):
-    start = None
-    end = None
-
-    # Convert parameter city strings to vertices start and end
-    for k, v in graph.adj_lst.items():
-        if k.value == cities[0]:
-            start = k
-        if k.value == cities[1]:
-            end = k
-
-    if not start or not end:
-        return None
-
-    # Stores city name string -> weight
-    visited = {}
-    visited[cities[0]] = 0
-
     q = Queue()
-    q.enqueue(start)
 
-    while not q.is_empty():
-        # City is a vertex
-        city = q.dequeue()
+    # Convert parameter city strings to vertices in queue
+    for city in cities:
+        for k in graph.adj_lst:
+            if k.value == city:
+                q.enqueue(k)
+                break
 
-        # Add each neighbor to visited, along with cheapest path to that city
-        for edge in graph.get_neighbors(city):
-            if edge.vertex.value not in visited:
-                # Store city, cost (cost up to city + cost of new edge)
-                visited[edge.vertex.value] = visited[city.value] + edge.weight
+    if q.length != len(cities):
+        return False, 0
 
-                q.enqueue(edge.vertex)
+    curr_city = q.dequeue()
+    next_city = q.dequeue()
+    cost = 0
 
-        if city == end:
-            return True, visited[city.value]
+    while next_city:
+        for i in range(len(graph.get_neighbors(curr_city))):
+            edge = graph.get_neighbors(curr_city)[i]
+            if edge.vertex.value == next_city.value:
+                cost += edge.weight
+                if not q.is_empty():
+                    curr_city = next_city
+                    next_city = q.dequeue()
+                    break
+                else:
+                    return True, cost
+            if i == len(graph.get_neighbors(curr_city)) - 1:
+                return False, 0
 
-    return False, 0
+
 
 
