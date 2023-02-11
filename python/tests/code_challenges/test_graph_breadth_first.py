@@ -1,12 +1,13 @@
 import pytest
 from data_structures.graph import Graph
+from data_structures.queue import Queue
 
 
 def test_exists():
     assert Graph
 
 
-@pytest.mark.skip("TODO")
+#@pytest.mark.skip("TODO")
 def test_bfs(graph):
     nodes = graph.get_nodes()
     root = nodes[0]
