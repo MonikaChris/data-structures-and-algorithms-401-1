@@ -11,21 +11,16 @@ class BinaryTree:
 
     def pre_order(self):
         # method body here
-        values_lst = []
-
         def walk(node, values):
-            if not node:
-                return
+            if node:
+                values.append(node.value)
+                walk(node.left, values)
+                walk(node.right, values)
+                return values
 
-            values.append(node.value)
-            walk(node.left, values)
-            walk(node.right, values)
-
-        walk(self.root, values_lst)
-        return values_lst
+        return walk(self.root, [])
 
     def in_order(self):
-        values_lst = []
 
         def walk(node, values):
             if not node:
@@ -35,34 +30,31 @@ class BinaryTree:
             values.append(node.value)
             walk(node.right, values)
 
-        walk(self.root, values_lst)
-        return values_lst
+            return values
+
+        return walk(self.root, [])
 
     def post_order(self):
-        values_lst = []
 
         def walk(node, values):
-            if not node:
-                return None
+            if node:
+                walk(node.left, values)
+                walk(node.right, values)
+                values.append(node.value)
+                return values
 
-            walk(node.left, values)
-            walk(node.right, values)
-            values.append(node.value)
-
-        walk(self.root, values_lst)
-        return values_lst
+        return walk(self.root, [])
 
     def find_maximum_value(self):
-        nodes = self.post_order()
-        print(nodes)
-        max_val = None
+        def walk(node, max_val):
+            if node:
+                if node.value > max_val:
+                    max_val = node.value
+                walk(node.left, max)
+                walk(node.right, max)
+                return max_val
 
-        for elem in nodes:
-            if type(elem) is int or type(elem) is float:
-                if max_val is None or elem > max_val:
-                    max_val = elem
-
-        return max_val
+        return walk(self.root, 0)
 
 
 class Node:
