@@ -1,6 +1,15 @@
+from data_structures.queue import Queue
+
 class Graph:
     """
-    Put docstring here
+    Implements a graph data structure. Supports the following methods:
+
+    add_node(value)
+    add_edge(Edge(node,weight))
+    get_nodes()
+    get_neighbors(node)
+    size()
+    breadth_first(root)
     """
 
     def __init__(self):
@@ -24,7 +33,7 @@ class Graph:
         self.adj_lst[node2].append(Edge(node1, weight))
 
     def get_nodes(self):
-        return self.adj_lst.keys()
+        return list(self.adj_lst.keys())
 
     def get_neighbors(self, node):
         if node in self.adj_lst:
@@ -36,7 +45,25 @@ class Graph:
         return len(self.adj_lst.keys())
 
     def breadth_first(self, root):
+        if not root:
+            return None
 
+        q = Queue()
+        q.enqueue(root)
+
+        visited = set()
+        visited.add(root)
+        node_lst = []
+
+        while not q.is_empty():
+            node = q.dequeue()
+            node_lst.append(node.value)
+
+            for edge in self.get_neighbors(node):
+                if edge.vertex not in visited:
+                    q.enqueue(edge.vertex)
+                    visited.add(edge.vertex)
+        return node_lst
 
 
 class Vertex:
