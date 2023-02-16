@@ -103,6 +103,41 @@ class LinkedList:
 
         return current.value
 
+    def reverse(self):
+        if not self.head:
+            return None
+
+        prev = None
+        curr = self.head
+
+        while curr:
+            next_node = curr.next_
+            curr.next_ = prev
+            prev = curr
+            curr = next_node
+
+        self.head = prev
+
+    def add_one(self):
+        self.reverse()
+        curr = self.head
+
+        while curr:
+            if curr.value == 9 and curr.next_:
+                curr.value = 0
+                curr = curr.next_
+
+            elif curr.value < 9:
+                curr.value += 1
+                break
+
+            else:
+                curr.value = 0
+                curr.next_ = Node(1)
+                break
+        self.reverse()
+
+
 class Node:
     def __init__(self, value, next_=None):
         self.value = value
