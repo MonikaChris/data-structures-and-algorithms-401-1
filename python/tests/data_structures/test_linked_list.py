@@ -125,6 +125,19 @@ def test_add_one_100():
     assert actual == expected
 
 
+def test_add_one_399():
+    node1 = Node(9)
+    node2 = Node(9, node1)
+    node3 = Node(3, node2)
+
+    ll = LinkedList(node3)
+    ll.add_one()
+    actual = get_ll_digits(ll)
+    expected = '400'
+
+    assert actual == expected
+
+
 
 
 
